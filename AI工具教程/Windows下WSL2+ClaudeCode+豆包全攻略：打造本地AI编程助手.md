@@ -216,31 +216,49 @@ claude plugin list everything-claude-code@everything-claude-code
 - `/update-docs` → 自动更新项目文档
 
 ### 4.2 插件2：Superpowers - 超级能力增强包
-功能：Claude Code的能力增强包，新增几十种实用能力：
-- 自动执行Shell命令、脚本
-- 自动管理Git仓库、提交代码、生成PR
-- 自动分析项目结构、生成架构图
-- 自动调试代码、定位Bug
-- 自动生成测试用例
-```bash
-# 安装插件
-claude plugin install superpowers
+功能：Claude Code官方推出的能力增强包，新增上百种实用能力，是Claude Code必装的核心插件：
+- ✅ 全自动化执行：自动执行Shell命令、脚本、构建、部署，不需要人工确认
+- ✅ Git全流程管理：自动拉取代码、提交变更、生成PR、处理冲突、合并分支
+- ✅ 项目分析能力：自动生成项目架构图、依赖关系图、接口文档
+- ✅ 智能排障：自动定位代码Bug、依赖问题、性能瓶颈，给出修复方案
+- ✅ 测试自动化：自动生成单元测试、集成测试、E2E测试用例，自动执行测试并生成报告
+- ✅ 多语言支持：支持10+编程语言的最佳实践、编码规范检查、自动优化
 
-# 开启全部权限（建议在信任的项目中使用）
+```bash
+# 官方安装命令
+claude plugin install superpowers@claude-plugins-official
+
+# 安装完成后重启Claude Code生效
+# 开启全部权限（建议在信任的项目中使用，避免误操作）
 claude plugin configure superpowers --allow-all
 ```
-使用示例：`claude "帮我提交当前项目的修改，生成符合规范的提交信息"`
+使用示例：
+- `/git-commit "完成用户登录功能"` → 自动生成符合规范的提交信息并提交
+- `/generate-tests` → 自动为当前项目生成所有核心功能的测试用例
+- `/fix-build` → 自动定位并修复当前项目的构建错误
 
-### 4.3 插件3：Claude HUD - 可视化交互界面
-功能：给Claude Code增加一个终端可视化界面，实时显示当前任务进度、调用状态、资源占用，不用再看枯燥的文本输出。
+### 4.3 插件3：Claude HUD - 实时状态可视化界面
+功能：Claude Code最受欢迎的可视化插件，在终端提供一个实时状态面板，不用翻历史日志就能看到所有关键信息：
+- ✅ 上下文健康度监控：实时显示剩余上下文Token、使用率、过期预警
+- ✅ 工具调用状态：实时显示当前调用的工具、执行进度、返回结果
+- ✅ 代理追踪：多子agent协作时显示每个agent的执行状态、进度
+- ✅ 待办进度：自动识别任务待办项，显示完成进度
+- ✅ 成本监控：实时显示当前会话的Token消耗、预估费用
+
 ```bash
-# 安装插件
-claude plugin install claude-hud
+# 安装方式1：官方插件市场安装
+claude plugin install jarrodwatts/claude-hud
+
+# 安装方式2：npx快速安装
+npx claudepluginhub jarrodwatts/claude-hud --plugin claude-hud
+
+# 安装完成后初始化配置（需要重启Claude Code）
+/claude-hud:setup
 
 # 启动HUD界面
 claude hud
 ```
-启动后会在终端显示一个漂亮的交互界面，支持鼠标操作，所有操作都可以在界面上完成，非常直观。
+启动后会在终端底部显示一个实时状态条，支持自定义布局、显示项、主题，所有状态一目了然，非常适合长会话、复杂项目开发场景。
 
 ---
 ## ✨ 实战演示：用Claude Code写一个简单的Python接口
