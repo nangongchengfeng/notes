@@ -179,16 +179,41 @@ claude "你好，介绍一下你自己"
 ## 📝 步骤4：安装Claude Code必备插件，能力翻倍
 Claude Code的插件生态非常丰富，我们安装三个最实用的插件，大幅提升使用体验。
 
-### 4.1 插件1：Everything Claude Code - 全局搜索增强
-功能：支持在整个项目中快速搜索文件、代码、内容，比自带搜索快10倍，支持正则、模糊搜索。
+### 4.1 插件1：Everything Claude Code (ECC) - 全功能AI编程增强系统
+这是Claude Code生态最强大的插件（Anthropic Hackathon获奖项目），不是简单的搜索工具，而是一整套AI编程性能优化体系，包含28个专业子代理、125个技能、60个命令，支持10+编程语言的开发规范、代码评审、自动规划、安全扫描等全流程能力，能让Claude Code的编码效率提升3倍以上。
+
+核心能力：
+- ✅ 多语言代码评审：自动评审TypeScript/Python/Go/Java/PHP/Rust等10+语言代码，检查质量、安全、性能问题
+- ✅ 自动规划实现：输入需求自动生成架构设计、实现步骤、测试方案
+- ✅ TDD工作流支持：强制遵循测试驱动开发流程，自动生成测试用例，保障代码质量
+- ✅ 自动排障：自动定位编译错误、依赖问题、运行时bug，给出修复方案
+- ✅ 安全扫描：内置102条安全规则，自动检测OWASP Top 10等安全漏洞
+- ✅ 持续学习：自动从你的编码习惯中提取模式，生成自定义技能，越用越懂你
+- ✅ 成本优化：自动优化Token消耗，成本降低60%以上
+- ✅ 多工具兼容：支持Claude Code/Cursor/OpenCode/Codex等所有主流AI编程工具
+
 ```bash
 # 安装插件
-claude plugin install everything
+# 1. 添加插件市场
+/plugin marketplace add affaan-m/everything-claude-code
+# 2. 安装插件
+/plugin install everything-claude-code@everything-claude-code
+# 3. 安装对应语言的规则（比如TypeScript+Python）
+git clone https://github.com/affaan-m/everything-claude-code.git
+cd everything-claude-code
+./install.sh typescript python
 
 # 验证安装
-claude plugin list
+claude plugin list everything-claude-code@everything-claude-code
 ```
-使用示例：`claude "在当前项目中搜索所有包含用户登录逻辑的文件"`
+
+常用命令示例：
+- `/plan "添加用户OAuth认证功能"` → 自动生成实现方案
+- `/tdd` → 开启TDD工作流，先写测试再写代码
+- `/code-review` → 自动评审当前代码变更，给出优化建议
+- `/build-fix` → 自动修复编译/构建错误
+- `/security-scan` → 自动扫描安全漏洞
+- `/update-docs` → 自动更新项目文档
 
 ### 4.2 插件2：Superpowers - 超级能力增强包
 功能：Claude Code的能力增强包，新增几十种实用能力：
