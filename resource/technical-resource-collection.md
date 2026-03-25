@@ -30,6 +30,7 @@ category: 技术资源汇总
 | SkillsMP 技能市场 | https://skillsmp.com/zh/search | Agent技能检索平台 |
 | SkillHub-专为中国用户优化的Skills社区 | https://skillhub.tencent.com/ | 国内Agent技能社区 |
 | Awesome OpenClaw Tutorial | https://awesome.tryopenclaw.asia/ | OpenClaw开发教程合集 |
+| OpenClaw 国内Docker镜像源 | https://github.com/justlovemaki/openclaw-docker-cn-im/tree/main | OpenClaw国内加速部署镜像，解决国内拉取镜像慢问题 |
 
 ---
 
