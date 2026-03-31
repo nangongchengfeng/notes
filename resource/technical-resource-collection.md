@@ -23,6 +23,7 @@ category: 技术资源汇总
 | 最全面的 Claude Code 中文教程 - 从零基础到企业级应用 | https://github.com/xianyu110/awesome-claudcode-tutorial | Claude Code全栈教程 |
 | AgentGuide - AI Agent 开发学习指南 | https://adongwanai.github.io/AgentGuide/ | Agent开发完整学习路线 |
 | Hello-Agents 智能体教程 | https://datawhalechina.github.io/hello-agents/#/./README | Datawhale出品智能体入门 |
+| 《AI Agent实战》在线书籍 | https://www.waylandz.com/ai-agent-book/ | 系统全面的AI Agent开发实战教程 |
 | everything-claude-code 中文教程 | https://github.com/affaan-m/everything-claude-code/blob/main/README.zh-CN.md | Claude Code使用指南 |
 | 从创意到 AI 产品 - Easy-Vibe 学习路线图 | https://datawhalechina.github.io/easy-vibe/zh-cn/stage-0/0.1-learning-map/ | AI产品开发全路线 |
 | 通义AI助手推出的40条Prompt，助力学习与生活 | https://aigcreative.feishu.cn/wiki/IctOw9B3IifZpikYZgxcbtgJncb | 实用Prompt合集 |
